@@ -1,4 +1,10 @@
-Command 'docker-compose' not found, but can be installed with:
-snap install docker          # version 24.0.5, or
-apt  install docker-compose  # version 1.29.2-1
-See 'snap info docker' for additional versions.
+time="2024-08-12T20:48:55+07:00" level=warning msg="/home/chiko/Downloads/a433-microservices/docker-compose.yml: `version` is obsolete"
+ Container a433-microservices-item-db-1  Running
+ Container a433-microservices-item-app-1  Running
+Attaching to item-app-1, item-db-1
+Gracefully stopping... (press Ctrl+C again to force)
+ Container a433-microservices-item-app-1  Stopping
+ Container a433-microservices-item-app-1  Stopped
+ Container a433-microservices-item-db-1  Stopping
+ Container a433-microservices-item-db-1  Stopped
+canceled

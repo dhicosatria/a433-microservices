@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: karsajobs-ui
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: karsajobs-ui
+  template:
+    metadata:
+      labels:
+        app: karsajobs-ui
+    spec:
+      containers:
+      - name: karsajobs-ui
+        image: dhicosatria/karsajobs-ui:latest
+        ports:
+        - containerPort: 80
+        env:
+        - name: VUE_APP_BACKEND
+          value: "http://10.100.128.89:31000"
